@@ -16,21 +16,11 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
-
-    
-
-    
-    
-       
-       
-      
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && transform.position.y < 4)
         {
             transform.position += new Vector3(0, speed, 0) * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) && transform.position.y > -4)
         {
             transform.position += new Vector3(0, -speed, 0) * Time.deltaTime;
         }

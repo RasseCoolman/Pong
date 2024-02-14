@@ -15,11 +15,11 @@ public class MovementPlr2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.I))
+        if (Input.GetKey(KeyCode.UpArrow) && transform.position.y < 4)
         {
             transform.position += new Vector3(0, speed, 0) * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.K))
+        if (Input.GetKey(KeyCode.DownArrow) && transform.position.y > -4)
         {
             transform.position += new Vector3(0, -speed, 0) * Time.deltaTime;
         }
