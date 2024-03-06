@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public Rigidbody rigidbody;
+    public Rigidbody r;
     public float speed = 100;
     public float jump = 10;
     // Start is called before the first frame update
