@@ -72,7 +72,7 @@ public class BallScript : MonoBehaviour
             ResetBall();
             player1Score.text = (int.Parse(player1Score.text) + 1).ToString();
         }
-        else if (transform.position.x < 0) ;
+        else if (transform.position.x < 0) 
         {
             ResetBall();
             player2Score.text = (int.Parse(player2Score.text) + 1).ToString(); 
