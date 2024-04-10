@@ -835,7 +835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   r: {fileID: 0}
-  speed: 10
+  speed: 20
   jump: 10
 --- !u!212 &941603496
 SpriteRenderer:
@@ -1033,7 +1033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   r: {fileID: 0}
-  speed: 10
+  speed: 20
 --- !u!61 &1036005371
 BoxCollider2D:
   m_ObjectHideFlags: 0
