@@ -61,7 +61,14 @@ public class BallScript : MonoBehaviour
     {
         if(collision.gameObject.name == "Player" || collision.gameObject.name == "Player2")
         {
-            PlayerBounce(collision.transform); 
+            PlayerBounce(collision.transform);
+            AudioSource audio = collision.transform.GetComponent<AudioSource>();
+            audio.Play(0);
+        }
+        else if(collision.gameObject.CompareTag("Wall"))
+        {
+            AudioSource audio = collision.transform.GetComponent<AudioSource>();
+            audio.Play(0);
         }
     }
 
